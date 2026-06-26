@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chef Buddy — Teman Masakmu di Dapur!</title>
+  <meta name="description" content="Chef Buddy adalah teman masakmu di dapur. Chatbot ceria yang siap bantu resep, tips masak, dan ide menu kapan saja." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="chat-app" id="chat-app">
+
+    <!-- Header Bar -->
+    <header class="chat-header" id="chat-header">
+      <div class="header-left">
+        <div class="avatar" id="bot-avatar">
+          <span class="avatar-emoji">👨‍🍳</span>
+          <span class="online-dot"></span>
+        </div>
+        <div class="header-info">
+          <h1 class="header-name">Chef Buddy</h1>
+          <p class="header-status" id="header-status">Teman masakmu di dapur!</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Chat Messages Area -->
+    <main class="chat-area" id="chat-box">
+      <!-- Welcome message -->
+      <div class="date-divider">
+        <span>Hari Ini</span>
+      </div>
+      <div class="message-row bot">
+        <div class="message-bubble bot">
+          <p class="message-text">Halo! Selamat datang di dapur Chef Buddy! 🍳 Mau masak apa hari ini? Atau ada bahan yang mau diolah? Cerita aja, nanti aku bantu carikan resepnya! 😋</p>
+          <span class="message-time">Baru saja</span>
+        </div>
+      </div>
+    </main>
+
+    <!-- Input Area -->
+    <footer class="chat-input-area" id="chat-input-area">
+      <form id="chat-form" class="chat-form" autocomplete="off">
+        <div class="input-wrapper" id="input-wrapper">
+          <input 
+            type="text" 
+            id="user-input" 
+            placeholder="Tanya resep atau tips masak di sini..." 
+            autocomplete="off" 
+            required 
+          />
+        </div>
+        <button type="submit" id="send-button" aria-label="Kirim pesan">
+          <svg class="send-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" fill="currentColor"/>
+          </svg>
+        </button>
+      </form>
+    </footer>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
